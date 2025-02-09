@@ -63,13 +63,13 @@ public class MapActivity extends AppCompatActivity {
         // Двигаем камеру на здание
         if ("First_Build".equals(buildingName))
             mapview.getMap().move(
-                    new CameraPosition(new Point(53.249236f, 34.342387f), 16.0f, 0.0f, 0.0f),
+                    new CameraPosition(new Point(53.249236f, 34.342387f), 18.0f, 0.0f, 0.0f),
                     new Animation(Animation.Type.SMOOTH, 2f),
                     null
             );
         else if ("Second_Build".equals(buildingName))
             mapview.getMap().move(
-                    new CameraPosition(new Point(53.243540f, 34.364818f), 16.0f, 0.0f, 0.0f),
+                    new CameraPosition(new Point(53.243540f, 34.364818f), 18.0f, 0.0f, 0.0f),
                     new Animation(Animation.Type.SMOOTH, 2f),
                     null
             );
