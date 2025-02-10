@@ -83,17 +83,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="148dp"
-            app:srcCompat="@drawable/get_pickture"
 
-            />
+        <FrameLayout
+            android:id="@+id/frameMovingAria"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_width="200dp"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="148dp"
+                app:srcCompat="@drawable/get_pickture" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/get_pickture" />
+        </FrameLayout>
+
+        <!-- Замените get_pickture на имя вашего растрового изображения -->
+
+        <!-- Замените get_pickture на имя вашего растрового изображения -->
 
     </FrameLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
