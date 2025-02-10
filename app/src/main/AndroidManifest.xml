@@ -43,7 +43,12 @@
         </activity>
 
         <activity
-            android:name=".SecondBuildActivity"
+            android:name=".SecondBuildActivity_18"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".SecondBuildActivity_19"
             android:exported="true">
         </activity>
 

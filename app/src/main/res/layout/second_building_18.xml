@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="97dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="304dp"
+            android:layout_marginTop="28dp"
+            android:text="Карта 1 этажа"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnFloor1"
+            android:layout_width="73dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="64dp"
+            android:text="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="changeOfFloor"
+            />
+
+        <Button
+            android:id="@+id/abtnFloor2"
+            android:layout_width="73dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="8dp"
+            android:text="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFloor1"
+            android:onClick="changeOfFloor"
+            />
+
+        <Button
+            android:id="@+id/btnFloor3"
+            android:layout_width="73dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="8dp"
+            android:text="3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abtnFloor2"
+            android:onClick="changeOfFloor"
+            />
+
+        <Button
+            android:id="@+id/btnFloor4"
+            android:layout_width="73dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="8dp"
+            android:text="4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFloor3"
+            android:onClick="changeOfFloor"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="160dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="28dp"
+            android:text="Второй корпус зд. 18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgPlan_18"
+            android:layout_width="270dp"
+            android:layout_height="380dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="72dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/housing_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

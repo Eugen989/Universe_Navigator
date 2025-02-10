@@ -4,11 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,8 +19,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void linkSecondBuild(View view) {
-        Intent intent = new Intent(MainActivity.this, SecondBuildActivity.class);
+    public void linkSecondDrawingBuild_18(View view) {
+        Intent intent = new Intent(MainActivity.this, SecondBuildActivity_18.class);
+        startActivity(intent);
+    }
+
+    public void linkSecondDrawingBuild_19(View view) {
+        Intent intent = new Intent(MainActivity.this, SecondBuildActivity_19.class);
         startActivity(intent);
     }
 

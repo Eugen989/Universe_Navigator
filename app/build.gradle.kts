@@ -14,6 +14,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -43,4 +44,6 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation("com.yandex.android:maps.mobile:4.10.1-full")
     implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.caverock:androidsvg:1.4")
+
 }

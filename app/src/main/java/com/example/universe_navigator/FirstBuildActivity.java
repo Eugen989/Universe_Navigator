@@ -67,8 +67,8 @@ public class FirstBuildActivity extends AppCompatActivity {
 
             case MotionEvent.ACTION_MOVE:
                 isMoving = true;
-                float newX = event.getRawX() + dX;
-                float newY = event.getRawY() + dY;
+                float newX = event.getRawX();
+                float newY = event.getRawY();
                 frameMovingAria.setX(newX);
                 frameMovingAria.setY(newY);
 
@@ -93,6 +93,8 @@ public class FirstBuildActivity extends AppCompatActivity {
                 child.setScaleX(scale);
                 child.setScaleY(scale);
             }
+            frameMovingAria.setScaleX(scale*2);
+            frameMovingAria.setScaleY(scale*2);
 
             return true;
         }

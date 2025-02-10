@@ -32,8 +32,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginTop="296dp"
-        android:onClick="linkSecondBuild"
-        android:text="Второй корпус"
+        android:onClick="linkSecondDrawingBuild_18"
+        android:text="Второй корпус зд. 18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="386dp"
+        android:onClick="linkSecondDrawingBuild_19"
+        android:text="Второй корпус зд. 19"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
