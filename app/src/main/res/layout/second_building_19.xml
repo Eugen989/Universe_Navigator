@@ -5,81 +5,94 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView5"
+
+    <include
+        layout="@layout/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Карта 1 этажа"
-        tools:layout_editor_absoluteX="316dp"
-        tools:layout_editor_absoluteY="346dp" />
+        tools:layout_editor_absoluteX="-12dp"
+        tools:layout_editor_absoluteY="-10dp" />
 
-    <Button
-        android:id="@+id/btnFloor1"
-        android:layout_width="73dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="304dp"
-        android:layout_marginTop="156dp"
-        android:text="1"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="340dp"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/abtnFloor2"
-        android:layout_width="73dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="304dp"
-        android:layout_marginTop="8dp"
-        android:text="2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFloor1" />
+        <Button
+            android:id="@+id/btnFloor1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/nav_btn"
+            android:text="1"
+            android:onClick="changeOfFloor"/>
 
-    <Button
-        android:id="@+id/btnFloor3"
-        android:layout_width="73dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="304dp"
-        android:text="3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/abtnFloor2" />
+        <Button
+            android:id="@+id/btnFloor2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/nav_btn"
+            android:text="2"
+            android:onClick="changeOfFloor"/>
 
-    <Button
-        android:id="@+id/btnFloor4"
-        android:layout_width="73dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="304dp"
-        android:layout_marginTop="12dp"
-        android:text="4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFloor3" />
+        <Button
+            android:id="@+id/btnFloor3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/nav_btn"
+            android:text="3"
+            android:onClick="changeOfFloor"/>
+
+        <Button
+            android:id="@+id/btnFloor4"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/nav_btn"
+            android:text="4"
+            android:onClick="changeOfFloor"/>
+
+        <Button
+            android:id="@+id/btnFloor5"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/nav_btn"
+            android:text="5"
+            android:onClick="changeOfFloor"/>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="160dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="96dp"
-        android:text="Второй корпус"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="116dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="16dp"
-        android:text="Home"
+        android:layout_width="243dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="116dp"
+        android:text="Второй корпус, здание 18"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imgPlan_18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="224dp"
+        android:id="@+id/imgPlan_19"
+        android:layout_width="270dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="192dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/housing_2_19_5" />
+        app:srcCompat="@drawable/housing_2_19_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

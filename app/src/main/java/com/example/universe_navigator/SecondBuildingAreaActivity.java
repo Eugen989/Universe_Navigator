@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SecondBuildActivity_18 extends AppCompatActivity {
+public class SecondBuildingAreaActivity extends AppCompatActivity {
     private ImageView imgView;
     private ScaleGestureDetector scaleGestureDetector;
 
@@ -20,11 +20,12 @@ public class SecondBuildActivity_18 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.second_building_18);
+        setContentView(R.layout.second_building_area);
 
-        imgView = findViewById(R.id.imgPlan_18);
 
-        scaleGestureDetector = new ScaleGestureDetector(this, new SecondBuildActivity_18.ScaleListener());
+        imgView = findViewById(R.id.imgPlan);
+
+        scaleGestureDetector = new ScaleGestureDetector(this, new SecondBuildingAreaActivity.ScaleListener());
 
         imgView.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -72,38 +73,6 @@ public class SecondBuildActivity_18 extends AppCompatActivity {
             imgView.setScaleY(scale);
 
             return true;
-        }
-    }
-
-
-    public void changeOfFloor(View view) {
-        int buttonId = view.getId();
-        String buttonName = getResources().getResourceEntryName(buttonId);
-        char floorNumber = buttonName.charAt(buttonName.length() - 1);
-
-
-
-        Log.e("SecondBuild", "Нажата кнопка: " + buttonName);
-
-        switch (floorNumber) {
-            case '0':
-                imgView.setImageResource(R.drawable.housing_2_18_0);
-                break;
-            case '1':
-                imgView.setImageResource(R.drawable.housing_2_18_1);
-                break;
-            case '2':
-                imgView.setImageResource(R.drawable.housing_2_18_2);
-                break;
-            case '3':
-                imgView.setImageResource(R.drawable.housing_2_18_3);
-                break;
-            case '4':
-                imgView.setImageResource(R.drawable.housing_2_18_4);
-                break;
-            case '5':
-                imgView.setImageResource(R.drawable.housing_2_18_5);
-                break;
         }
     }
 

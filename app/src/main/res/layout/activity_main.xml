@@ -7,67 +7,79 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_transition"
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="188dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_transition"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:background="@drawable/nav_btn"
+            android:gravity="center_vertical"
+            android:onClick="linkFirstBuild"
+            android:paddingLeft="20dip"
+            android:text="Первый корпус"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/nav_btn"
+            android:gravity="center_vertical"
+            android:onClick="linkSecondDrawingBuildArea"
+            android:paddingLeft="20dip"
+            android:text="Второй корпус"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button123"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/nav_btn"
+            android:gravity="center_vertical"
+            android:onClick="linkSecondDrawingBuild_18"
+            android:paddingLeft="20dip"
+            android:text="Второй корпус, здание 18"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button1234"
+            android:layout_width="330dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/nav_btn"
+            android:gravity="center_vertical"
+            android:onClick="linkSecondDrawingBuild_19"
+            android:paddingLeft="20dip"
+            android:text="Второй корпус, здание 19"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/main_header"
+        layout="@layout/header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="212dp"
-        android:onClick="linkFirstBuild"
-        android:text="Первый корпус"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="-12dp"
+        tools:layout_editor_absoluteY="-10dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="220dp"
-        android:layout_height="24dp"
-        android:text="Основной экран"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="52dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="296dp"
-        android:onClick="linkSecondDrawingBuild_18"
-        android:text="Второй корпус зд. 18"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="386dp"
-        android:onClick="linkSecondDrawingBuild_19"
-        android:text="Второй корпус зд. 19"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="166dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
-        android:text="Карта БГИТУ"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="158dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="204dp"
-        android:layout_marginTop="4dp"
-        android:onClick="linkToMap"
-        android:text="Как добраться"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-<!--    <com.yandex.makpit.mapview.MapView/>-->
+    <!--    <com.yandex.makpit.mapview.MapView/>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

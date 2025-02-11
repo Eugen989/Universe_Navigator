@@ -43,6 +43,11 @@
         </activity>
 
         <activity
+            android:name=".SecondBuildingAreaActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
             android:name=".SecondBuildActivity_18"
             android:exported="true">
         </activity>
